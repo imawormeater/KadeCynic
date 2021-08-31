@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="firefront.png">
+	<!-- Created with Adobe Animate version 19.2.0.405 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="frontfires instance 10000" x="10" y="10" width="1164" height="205" frameX="0" frameY="-9" frameWidth="1173" frameHeight="214"/>
+	<SubTexture name="frontfires instance 10001" x="10" y="10" width="1164" height="205" frameX="0" frameY="-9" frameWidth="1173" frameHeight="214"/>
+	<SubTexture name="frontfires instance 10002" x="10" y="10" width="1164" height="205" frameX="0" frameY="-9" frameWidth="1173" frameHeight="214"/>
+	<SubTexture name="frontfires instance 10003" x="10" y="225" width="1148" height="211" frameX="-11" frameY="0" frameWidth="1173" frameHeight="214"/>
+	<SubTexture name="frontfires instance 10004" x="10" y="225" width="1148" height="211" frameX="-11" frameY="0" frameWidth="1173" frameHeight="214"/>
+	<SubTexture name="frontfires instance 10005" x="10" y="225" width="1148" height="211" frameX="-11" frameY="0" frameWidth="1173" frameHeight="214"/>
+	<SubTexture name="frontfires instance 10006" x="10" y="446" width="1164" height="187" frameX="0" frameY="-27" frameWidth="1173" frameHeight="214"/>
+	<SubTexture name="frontfires instance 10007" x="10" y="446" width="1164" height="187" frameX="0" frameY="-27" frameWidth="1173" frameHeight="214"/>
+	<SubTexture name="frontfires instance 10008" x="10" y="446" width="1164" height="187" frameX="0" frameY="-27" frameWidth="1173" frameHeight="214"/>
+	<SubTexture name="frontfires instance 10009" x="10" y="643" width="1165" height="180" frameX="-8" frameY="-29" frameWidth="1173" frameHeight="214"/>
+	<SubTexture name="frontfires instance 10010" x="10" y="643" width="1165" height="180" frameX="-8" frameY="-29" frameWidth="1173" frameHeight="214"/>
+	<SubTexture name="frontfires instance 10011" x="10" y="643" width="1165" height="180" frameX="-8" frameY="-29" frameWidth="1173" frameHeight="214"/>
+</TextureAtlas>

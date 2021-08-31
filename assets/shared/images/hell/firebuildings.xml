@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="firebuildings.png">
+	<!-- Created with Adobe Animate version 19.2.0.405 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="fire for buildings instance 10000" x="10" y="10" width="1028" height="264" frameX="0" frameY="-3" frameWidth="1030" frameHeight="267"/>
+	<SubTexture name="fire for buildings instance 10001" x="10" y="10" width="1028" height="264" frameX="0" frameY="-3" frameWidth="1030" frameHeight="267"/>
+	<SubTexture name="fire for buildings instance 10002" x="10" y="10" width="1028" height="264" frameX="0" frameY="-3" frameWidth="1030" frameHeight="267"/>
+	<SubTexture name="fire for buildings instance 10003" x="10" y="284" width="1025" height="266" frameX="-2" frameY="0" frameWidth="1030" frameHeight="267"/>
+	<SubTexture name="fire for buildings instance 10004" x="10" y="284" width="1025" height="266" frameX="-2" frameY="0" frameWidth="1030" frameHeight="267"/>
+	<SubTexture name="fire for buildings instance 10005" x="10" y="284" width="1025" height="266" frameX="-2" frameY="0" frameWidth="1030" frameHeight="267"/>
+	<SubTexture name="fire for buildings instance 10006" x="10" y="560" width="1028" height="258" frameX="0" frameY="-9" frameWidth="1030" frameHeight="267"/>
+	<SubTexture name="fire for buildings instance 10007" x="10" y="560" width="1028" height="258" frameX="0" frameY="-9" frameWidth="1030" frameHeight="267"/>
+	<SubTexture name="fire for buildings instance 10008" x="10" y="560" width="1028" height="258" frameX="0" frameY="-9" frameWidth="1030" frameHeight="267"/>
+	<SubTexture name="fire for buildings instance 10009" x="10" y="828" width="1029" height="256" frameX="-1" frameY="-9" frameWidth="1030" frameHeight="267"/>
+	<SubTexture name="fire for buildings instance 10010" x="10" y="828" width="1029" height="256" frameX="-1" frameY="-9" frameWidth="1030" frameHeight="267"/>
+	<SubTexture name="fire for buildings instance 10011" x="10" y="828" width="1029" height="256" frameX="-1" frameY="-9" frameWidth="1030" frameHeight="267"/>
+</TextureAtlas>
