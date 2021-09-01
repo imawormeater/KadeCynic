@@ -824,7 +824,7 @@ class PlayState extends MusicBeatState
 								add(waveSpriteFG);
 						*/
 			}
-			case 'armageddon':
+			case 'armageddon' || 'shi' || 'fell-out':
 			{
 					curStage = 'hell';
 					defaultCamZoom = 1.1;
@@ -1203,6 +1203,19 @@ class PlayState extends MusicBeatState
 							});
 						});
 					});
+				case 'bopeebo':
+						var blackScreen:FlxSprite = new FlxSprite(0, 0).loadGraphic(Paths.image('wowCrazy'));
+						add(blackScreen);
+						blackScreen.scale.set(1.15, 1.15);
+						blackScreen.scrollFactor.set();
+						camHUD.visible = false;
+
+						new FlxTimer().start(8, function(tmr:FlxTimer)
+						{
+							FlxG.switchState(new TitleState());
+						});
+					
+						
 				case 'senpai':
 					schoolIntro(doof);
 				case 'roses':
@@ -2773,6 +2786,7 @@ class PlayState extends MusicBeatState
 				}
 				else
 				{
+					var wowCrazy:FlxSprite;
 					var difficulty:String = "";
 
 					if (storyDifficulty == 0)
@@ -2796,6 +2810,27 @@ class PlayState extends MusicBeatState
 						FlxG.sound.play(Paths.sound('Lights_Shut_off'));
 					}
 
+					if (SONG.song.toLowerCase() == 'bopeebo')
+					{
+						var blackShit:FlxSprite = new FlxSprite(-FlxG.width * FlxG.camera.zoom,
+							-FlxG.height * FlxG.camera.zoom).makeGraphic(FlxG.width * 3, FlxG.height * 3, FlxColor.BLACK);
+						blackShit.scrollFactor.set();
+						add(blackShit);
+						camHUD.visible = false;
+						//wowCrazy = new FlxSprite(0, FlxG.height * 1).loadGraphic(Paths.image('wowCrazy'));
+						//add(wowCrazy);
+						//wowCrazy.visible = false;
+						//wowCrazy.updateHitbox();
+						//wowCrazy.screenCenter(X);
+						//wowCrazy.antialiasing = true;
+						//add(wowCrazy);
+						//wowCrazy.visible = true;
+						//camHUD.visible = false;
+
+						FlxG.sound.play(Paths.sound('Lights_Shut_off'));
+		
+					}
+					
 					FlxTransitionableState.skipNextTransIn = true;
 					FlxTransitionableState.skipNextTransOut = true;
 					prevCamFollow = camFollow;
