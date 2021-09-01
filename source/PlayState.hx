@@ -3789,7 +3789,83 @@ class PlayState extends MusicBeatState
 			setVar('curStep',curStep);
 			callLua('stepHit',[curStep]);
 		}
-
+		
+		
+		//ARMAGEDDON HEALTH LOSS
+		if (curStep >= 64 && curStep <= 96 && curSong.toLowerCase() == 'armageddon')
+		{
+			health -= 0.01;
+		}
+		if (curStep >= 128 && curStep <= 160 && curSong.toLowerCase() == 'armageddon')
+		{
+			health -= 0.01;
+		}
+		if (curStep >= 192 && curStep <= 224 && curSong.toLowerCase() == 'armageddon')
+		{
+			health -= 0.01;
+		}
+		if (curStep >= 256 && curStep <= 287 && curSong.toLowerCase() == 'armageddon')
+		{
+			health -= 0.01;
+		}
+		if (curStep >= 320 && curStep <= 350 && curSong.toLowerCase() == 'armageddon')
+		{
+			health -= 0.01;
+		}
+		if (curStep >= 384 && curStep <= 399 && curSong.toLowerCase() == 'armageddon')
+		{
+			health -= 0.005;
+		}
+		if (curStep >= 400 && curStep <= 415 && curSong.toLowerCase() == 'armageddon')
+		{
+			health -= 0.02;
+		}
+		if (curStep >= 416 && curStep <= 448 && curSong.toLowerCase() == 'armageddon')
+		{
+			health -= 0.02;
+		}
+		if (curStep >= 449 && curStep <= 479 && curSong.toLowerCase() == 'armageddon')
+		{
+			health -= 0.005;
+		}
+		if (curStep >= 512 && curStep <= 559 && curSong.toLowerCase() == 'armageddon')
+		{
+			health -= 0.01;
+		}
+		if (curStep >= 576 && curStep <= 591 && curSong.toLowerCase() == 'armageddon')
+		{
+			health -= 0.01;
+		}
+		if (curStep >= 608 && curStep <= 624 && curSong.toLowerCase() == 'armageddon')
+		{
+			health -= 0.01;
+		}
+		if (curStep >= 640 && curStep <= 672 && curSong.toLowerCase() == 'armageddon')
+		{
+			health -= 0.01;
+		}
+		if (curStep >= 704 && curStep <= 735 && curSong.toLowerCase() == 'armageddon')
+		{
+			health -= 0.01;
+		}
+		if (curStep >= 768 && curStep <= 799 && curSong.toLowerCase() == 'armageddon')
+		{
+			health -= 0.01;
+		}
+		if (curStep >= 832 && curStep <= 863 && curSong.toLowerCase() == 'armageddon')
+		{
+			health -= 0.01;
+		}
+		if (curStep >= 896 && curStep <= 927 && curSong.toLowerCase() == 'armageddon')
+		{
+			health -= 0.01;
+		}
+		if (curStep >= 960 && curStep <= 991 && curSong.toLowerCase() == 'armageddon')
+		{
+			health -= 0.01;
+		}
+		
+		
 		if (dad.curCharacter == 'spooky' && curStep % 4 == 2)
 		{
 			// dad.dance();
