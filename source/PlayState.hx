@@ -855,12 +855,13 @@ class PlayState extends MusicBeatState
 					
 					var buildTex = Paths.getSparrowAtlas('hell/firebuildings');
 
-					buildingFire = new FlxSprite(50, 350);
+					buildingFire = new FlxSprite(180, 280);
 					buildingFire.frames = buildTex;
 					buildingFire.animation.addByPrefix('idle', 'fire for buildings instance');
 					buildingFire.animation.play('idle');
 					buildingFire.scale.set(1.25, 1.25);
 					buildingFire.antialiasing = true;
+					buildingFire.scrollFactor.set(0.5, 0.5);
 					add(buildingFire);
 					
 					var groundHell:FlxSprite = new FlxSprite(-150, 630).loadGraphic(Paths.image('hell/ground'));
@@ -873,12 +874,13 @@ class PlayState extends MusicBeatState
 					
 					var firelolTex = Paths.getSparrowAtlas('hell/firefront');
 
-					fireFront = new FlxSprite(-30, 630);
+					fireFront = new FlxSprite(0, 690);
 					fireFront.frames = firelolTex;
 					fireFront.animation.addByPrefix('idle', 'frontfires instance');
 					fireFront.animation.play('idle');
 					fireFront.scale.set(1.25, 1.25);
 					fireFront.antialiasing = true;
+					buildingFire.scrollFactor.set(1.3, 1.3);
 					add(fireFront);
 					
 			}
