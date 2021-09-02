@@ -910,17 +910,7 @@ class PlayState extends MusicBeatState
 						groundHell.scale.set(1.25, 1.25);
 						groundHell.updateHitbox();
 						add(groundHell);
-						/*
-						var devTex = Paths.getSparrowAtlas('devs');
-	
-						devTied = new FlxSprite(500, 500);
-						devTied.frames = devTex;
-						devTied.animation.addByPrefix('idle', 'gf groupie instance');
-						devTied.animation.play('idle');
-						devTied.antialiasing = true;
-						devTied.scrollFactor.set(1, 1);
-						add(devTied);
-					*/
+
 						var firelolTex = Paths.getSparrowAtlas('hell/firefront');
 	
 						fireFront = new FlxSprite(0, 690);
@@ -967,8 +957,6 @@ class PlayState extends MusicBeatState
 		{
 			case 'limo':
 				gfVersion = 'gf-car';
-			case 'hell2':
-				gfVersion = 'gf-christmas';
 			case 'mall' | 'mallEvil':
 				gfVersion = 'gf-christmas';
 			case 'school':
@@ -979,7 +967,6 @@ class PlayState extends MusicBeatState
 
 		if (curStage == 'limo')
 			gfVersion = 'gf-car';
-
 		gf = new Character(400, 130, gfVersion);
 		gf.scrollFactor.set(0.95, 0.95);
 
@@ -1073,12 +1060,24 @@ class PlayState extends MusicBeatState
 
 		add(gf);
 
+		if (curStage == 'hell2')
+			{
+				var devTex = Paths.getSparrowAtlas('devs');
+			
+				devTied = new FlxSprite(370, 400);
+				devTied.frames = devTex;
+				devTied.animation.addByPrefix('idle', 'gf groupie instance');
+				devTied.animation.play('idle');
+				devTied.antialiasing = true;
+				add(devTied);
+			}
 		// Shitty layering but whatev it works LOL
 		if (curStage == 'limo')
 			add(limo);
 
 		add(dad);
 		add(boyfriend);
+
 
 		var doof:DialogueBox = new DialogueBox(false, dialogue);
 		// doof.x += 70;
