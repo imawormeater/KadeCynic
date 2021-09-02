@@ -1064,7 +1064,7 @@ class PlayState extends MusicBeatState
 			{
 				var devTex = Paths.getSparrowAtlas('devs');
 			
-				devTied = new FlxSprite(370, 400);
+				devTied = new FlxSprite(340, 430);
 				devTied.frames = devTex;
 				devTied.animation.addByPrefix('idle', 'gf groupie instance');
 				devTied.animation.play('idle');
