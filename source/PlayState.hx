@@ -824,7 +824,7 @@ class PlayState extends MusicBeatState
 								add(waveSpriteFG);
 						*/
 			}
-			case 'armageddon' || 'shi' || 'fell-out':
+			case 'armageddon' | 'shi' | 'fell-out':
 			{
 					curStage = 'hell';
 					defaultCamZoom = 1.1;
