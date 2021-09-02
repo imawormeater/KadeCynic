@@ -59,6 +59,9 @@ class KadeEngineData
 
 		if (FlxG.save.data.watermark == null)
 			FlxG.save.data.watermark = false;
+		
+		if(FlxG.save.data.watermark = true)
+			FlxG.save.data.watermark = false;
 
 		Conductor.recalculateTimings();
 

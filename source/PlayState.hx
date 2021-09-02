@@ -1209,6 +1209,7 @@ class PlayState extends MusicBeatState
 						blackScreen.scale.set(1.15, 1.15);
 						blackScreen.scrollFactor.set();
 						camHUD.visible = false;
+						FlxG.sound.play(Paths.sound('scarySong'));
 
 						new FlxTimer().start(8, function(tmr:FlxTimer)
 						{
