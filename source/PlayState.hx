@@ -155,6 +155,7 @@ class PlayState extends MusicBeatState
 
 	var halloweenBG:FlxSprite;
 	var fireFront:FlxSprite;
+	var devTied:FlxSprite;
 	var buildingFire:FlxSprite;
 	var isHalloween:Bool = false;
 
@@ -824,7 +825,7 @@ class PlayState extends MusicBeatState
 								add(waveSpriteFG);
 						*/
 			}
-			case 'armageddon' | 'shi' | 'fell-out':
+			case 'armageddon' | 'shi':
 			{
 					curStage = 'hell';
 					defaultCamZoom = 1.1;
@@ -852,20 +853,7 @@ class PlayState extends MusicBeatState
 					buildings.scale.set(1.25, 1.25);
 					buildings.updateHitbox();
 					add(buildings);
-					/*
-					//i don't know how to make this work (sorry ev :|)
-					
-					// var buildTex = Paths.getSparrowAtlas('hell/firebuildings');
 
-					// buildingFire = new FlxSprite(180, 280);
-					// buildingFire.frames = buildTex;
-					// buildingFire.animation.addByPrefix('idle', 'fire for buildings instance');
-					// buildingFire.animation.play('idle');
-					// buildingFire.scale.set(1.25, 1.25);
-					// buildingFire.antialiasing = true;
-					// buildingFire.scrollFactor.set(0.5, 0.5);
-					// add(buildingFire);
-					*/
 					var groundHell:FlxSprite = new FlxSprite(-150, 630).loadGraphic(Paths.image('hell/ground'));
 					groundHell.antialiasing = true;
 					groundHell.scrollFactor.set(1, 1);
@@ -886,6 +874,65 @@ class PlayState extends MusicBeatState
 					add(fireFront);
 					
 			}
+			case 'fell-out':
+				{
+						curStage = 'hell2';
+						defaultCamZoom = 1.1;
+						
+						var bg:FlxSprite = new FlxSprite(0, 50).loadGraphic(Paths.image('hell/sky'));
+						bg.antialiasing = true;
+						bg.scrollFactor.set(0.2, 0.2);
+						bg.active = false;
+						bg.scale.set(1.25, 1.25);
+						bg.updateHitbox();
+						add(bg);
+						
+						var backBuildings:FlxSprite = new FlxSprite(70, 240).loadGraphic(Paths.image('hell/backbuildings'));
+						backBuildings.antialiasing = true;
+						backBuildings.scrollFactor.set(0.3, 0.3);
+						backBuildings.active = false;
+						backBuildings.scale.set(1.15, 1.15);
+						backBuildings.updateHitbox();
+						add(backBuildings);
+						
+						var buildings:FlxSprite = new FlxSprite(0, 150).loadGraphic(Paths.image('hell/buildings'));
+						buildings.antialiasing = true;
+						buildings.scrollFactor.set(0.5, 0.5);
+						buildings.active = false;
+						buildings.scale.set(1.25, 1.25);
+						buildings.updateHitbox();
+						add(buildings);
+	
+						var groundHell:FlxSprite = new FlxSprite(-150, 630).loadGraphic(Paths.image('hell/ground'));
+						groundHell.antialiasing = true;
+						groundHell.scrollFactor.set(1, 1);
+						groundHell.active = false;
+						groundHell.scale.set(1.25, 1.25);
+						groundHell.updateHitbox();
+						add(groundHell);
+						/*
+						var devTex = Paths.getSparrowAtlas('devs');
+	
+						devTied = new FlxSprite(500, 500);
+						devTied.frames = devTex;
+						devTied.animation.addByPrefix('idle', 'gf groupie instance');
+						devTied.animation.play('idle');
+						devTied.antialiasing = true;
+						devTied.scrollFactor.set(1, 1);
+						add(devTied);
+					*/
+						var firelolTex = Paths.getSparrowAtlas('hell/firefront');
+	
+						fireFront = new FlxSprite(0, 690);
+						fireFront.frames = firelolTex;
+						fireFront.animation.addByPrefix('idle', 'frontfires instance');
+						fireFront.animation.play('idle');
+						fireFront.scale.set(1.25, 1.25);
+						fireFront.antialiasing = true;
+						fireFront.scrollFactor.set(1.3, 1.3);
+						add(fireFront);
+						
+				}
 			default:
 			{
 					defaultCamZoom = 0.9;
@@ -920,6 +967,8 @@ class PlayState extends MusicBeatState
 		{
 			case 'limo':
 				gfVersion = 'gf-car';
+			case 'hell2':
+				gfVersion = 'gf-christmas';
 			case 'mall' | 'mallEvil':
 				gfVersion = 'gf-christmas';
 			case 'school':

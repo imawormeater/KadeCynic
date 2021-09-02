@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="bad_devs.png">
+	<!-- Created with Adobe Animate version 19.2.0.405 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="gf groupie instance 10000" x="10" y="10" width="660" height="449" frameX="-1" frameY="-28" frameWidth="662" frameHeight="480"/>
+	<SubTexture name="gf groupie instance 10001" x="10" y="10" width="660" height="449" frameX="-1" frameY="-28" frameWidth="662" frameHeight="480"/>
+	<SubTexture name="gf groupie instance 10002" x="10" y="469" width="616" height="480" frameX="-26" frameY="0" frameWidth="662" frameHeight="480"/>
+	<SubTexture name="gf groupie instance 10003" x="10" y="469" width="616" height="480" frameX="-26" frameY="0" frameWidth="662" frameHeight="480"/>
+	<SubTexture name="gf groupie instance 10004" x="10" y="469" width="616" height="480" frameX="-26" frameY="0" frameWidth="662" frameHeight="480"/>
+	<SubTexture name="gf groupie instance 10005" x="10" y="469" width="616" height="480" frameX="-26" frameY="0" frameWidth="662" frameHeight="480"/>
+	<SubTexture name="gf groupie instance 10006" x="10" y="469" width="616" height="480" frameX="-26" frameY="0" frameWidth="662" frameHeight="480"/>
+	<SubTexture name="gf groupie instance 10007" x="10" y="469" width="616" height="480" frameX="-26" frameY="0" frameWidth="662" frameHeight="480"/>
+	<SubTexture name="gf groupie instance 10008" x="10" y="469" width="616" height="480" frameX="-26" frameY="0" frameWidth="662" frameHeight="480"/>
+	<SubTexture name="gf groupie instance 10009" x="10" y="469" width="616" height="480" frameX="-26" frameY="0" frameWidth="662" frameHeight="480"/>
+	<SubTexture name="gf groupie instance 10010" x="10" y="469" width="616" height="480" frameX="-26" frameY="0" frameWidth="662" frameHeight="480"/>
+	<SubTexture name="gf groupie instance 10011" x="10" y="469" width="616" height="480" frameX="-26" frameY="0" frameWidth="662" frameHeight="480"/>
+	<SubTexture name="gf groupie instance 10012" x="10" y="469" width="616" height="480" frameX="-26" frameY="0" frameWidth="662" frameHeight="480"/>
+	<SubTexture name="gf groupie instance 10013" x="10" y="469" width="616" height="480" frameX="-26" frameY="0" frameWidth="662" frameHeight="480"/>
+	<SubTexture name="gf groupie instance 10014" x="10" y="469" width="616" height="480" frameX="-26" frameY="0" frameWidth="662" frameHeight="480"/>
+	<SubTexture name="gf groupie instance 10015" x="10" y="959" width="662" height="448" frameX="0" frameY="-29" frameWidth="662" frameHeight="480"/>
+	<SubTexture name="gf groupie instance 10016" x="10" y="959" width="662" height="448" frameX="0" frameY="-29" frameWidth="662" frameHeight="480"/>
+	<SubTexture name="gf groupie instance 10017" x="10" y="469" width="616" height="480" frameX="-26" frameY="0" frameWidth="662" frameHeight="480"/>
+	<SubTexture name="gf groupie instance 10018" x="10" y="469" width="616" height="480" frameX="-26" frameY="0" frameWidth="662" frameHeight="480"/>
+	<SubTexture name="gf groupie instance 10019" x="10" y="469" width="616" height="480" frameX="-26" frameY="0" frameWidth="662" frameHeight="480"/>
+	<SubTexture name="gf groupie instance 10020" x="10" y="469" width="616" height="480" frameX="-26" frameY="0" frameWidth="662" frameHeight="480"/>
+	<SubTexture name="gf groupie instance 10021" x="10" y="469" width="616" height="480" frameX="-26" frameY="0" frameWidth="662" frameHeight="480"/>
+	<SubTexture name="gf groupie instance 10022" x="10" y="469" width="616" height="480" frameX="-26" frameY="0" frameWidth="662" frameHeight="480"/>
+	<SubTexture name="gf groupie instance 10023" x="10" y="469" width="616" height="480" frameX="-26" frameY="0" frameWidth="662" frameHeight="480"/>
+	<SubTexture name="gf groupie instance 10024" x="10" y="469" width="616" height="480" frameX="-26" frameY="0" frameWidth="662" frameHeight="480"/>
+	<SubTexture name="gf groupie instance 10025" x="10" y="469" width="616" height="480" frameX="-26" frameY="0" frameWidth="662" frameHeight="480"/>
+	<SubTexture name="gf groupie instance 10026" x="10" y="469" width="616" height="480" frameX="-26" frameY="0" frameWidth="662" frameHeight="480"/>
+	<SubTexture name="gf groupie instance 10027" x="10" y="469" width="616" height="480" frameX="-26" frameY="0" frameWidth="662" frameHeight="480"/>
+	<SubTexture name="gf groupie instance 10028" x="10" y="469" width="616" height="480" frameX="-26" frameY="0" frameWidth="662" frameHeight="480"/>
+	<SubTexture name="gf groupie instance 10029" x="10" y="469" width="616" height="480" frameX="-26" frameY="0" frameWidth="662" frameHeight="480"/>
+</TextureAtlas>
