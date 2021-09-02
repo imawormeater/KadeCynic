@@ -852,20 +852,20 @@ class PlayState extends MusicBeatState
 					buildings.scale.set(1.25, 1.25);
 					buildings.updateHitbox();
 					add(buildings);
-					
+					/*
 					//i don't know how to make this work (sorry ev :|)
 					
-					//var buildTex = Paths.getSparrowAtlas('hell/firebuildings');
+					// var buildTex = Paths.getSparrowAtlas('hell/firebuildings');
 
-					//buildingFire = new FlxSprite(180, 280);
-					//buildingFire.frames = buildTex;
-					//buildingFire.animation.addByPrefix('idle', 'fire for buildings instance');
-					//buildingFire.animation.play('idle');
-					//buildingFire.scale.set(1.25, 1.25);
-					//buildingFire.antialiasing = true;
-					//buildingFire.scrollFactor.set(0.5, 0.5);
-					//add(buildingFire);
-					
+					// buildingFire = new FlxSprite(180, 280);
+					// buildingFire.frames = buildTex;
+					// buildingFire.animation.addByPrefix('idle', 'fire for buildings instance');
+					// buildingFire.animation.play('idle');
+					// buildingFire.scale.set(1.25, 1.25);
+					// buildingFire.antialiasing = true;
+					// buildingFire.scrollFactor.set(0.5, 0.5);
+					// add(buildingFire);
+					*/
 					var groundHell:FlxSprite = new FlxSprite(-150, 630).loadGraphic(Paths.image('hell/ground'));
 					groundHell.antialiasing = true;
 					groundHell.scrollFactor.set(1, 1);
