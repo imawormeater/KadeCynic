@@ -37,8 +37,8 @@ class StoryMenuState extends MusicBeatState
 	];
 
 	var weekNames:Array<String> = [
-		"How to Funk",
-		"Cynic's Big Day Out"
+		"fuck your gf",
+		"Cynic's Big Day Out",
 	];
 
 	var txtWeekTitle:FlxText;
