@@ -156,6 +156,7 @@ class PlayState extends MusicBeatState
 	var halloweenBG:FlxSprite;
 	var fireFront:FlxSprite;
 	var devTied:FlxSprite;
+	var dieTied:FlxSprite;
 	var buildingFire:FlxSprite;
 	var isHalloween:Bool = false;
 
@@ -861,7 +862,7 @@ class PlayState extends MusicBeatState
 					groundHell.scale.set(1.25, 1.25);
 					groundHell.updateHitbox();
 					add(groundHell);
-					
+
 					var firelolTex = Paths.getSparrowAtlas('hell/firefront');
 
 					fireFront = new FlxSprite(0, 690);
@@ -870,13 +871,13 @@ class PlayState extends MusicBeatState
 					fireFront.animation.play('idle');
 					fireFront.scale.set(1.25, 1.25);
 					fireFront.antialiasing = true;
-					buildingFire.scrollFactor.set(1.3, 1.3);
+					fireFront.scrollFactor.set(1.3, 1.3);
 					add(fireFront);
 					
 			}
 			case 'fell-out':
 				{
-						curStage = 'hell2';
+						curStage = 'poophell';
 						defaultCamZoom = 1.1;
 						
 						var bg:FlxSprite = new FlxSprite(0, 50).loadGraphic(Paths.image('hell/sky'));
@@ -1060,7 +1061,9 @@ class PlayState extends MusicBeatState
 
 		add(gf);
 
-		if (curStage == 'hell2')
+		//the devs quote on qutoe me
+
+		if (curStage == 'poophell')
 			{
 				var devTex = Paths.getSparrowAtlas('devs');
 			
@@ -1071,6 +1074,19 @@ class PlayState extends MusicBeatState
 				devTied.antialiasing = true;
 				add(devTied);
 			}
+		
+		if (curStage == 'hell')
+			{
+				var dieTex = Paths.getSparrowAtlas('diebitch');
+				
+				dieTied = new FlxSprite(340, 430);
+				dieTied.frames = dieTex;
+				dieTied.animation.addByPrefix('idle', 'gf groupie instance');
+				dieTied.animation.play('idle');
+				dieTied.antialiasing = true;
+				add(dieTied);
+			}
+
 		// Shitty layering but whatev it works LOL
 		if (curStage == 'limo')
 			add(limo);
