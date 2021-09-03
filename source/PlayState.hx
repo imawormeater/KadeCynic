@@ -3883,15 +3883,34 @@ class PlayState extends MusicBeatState
 		gf.playAnim('scared', true);
 	}
 	function changeDaddy(id:String)
-		{
+		{                
 			var olddadx = dad.x;
 			var olddady = dad.y;
 			remove(dad);
 			dad = new Character(olddadx, olddady, id);
 			add(dad);
 			iconP2.animation.play(id);
-			trace('did it work, just maybe, just maybe');
 		}
+
+
+	function changeBf(id:String)
+		{                
+			var olddadx = boyfriend.x;
+			var olddady = boyfriend.y;
+			remove(boyfriend);
+			boyfriend = new Boyfriend(olddadx, olddady, id);
+			add(boyfriend);
+			iconP1.animation.play(id);
+		}
+	function changeGf(id:String)
+		{                
+			var olddadx = gf.x;
+			var olddady = gf.y;
+			remove(gf);
+			gf = new Character(olddadx, olddady, id);
+			add(gf);
+		}
+
 	override function stepHit()
 	{
 		super.stepHit();
@@ -3980,8 +3999,35 @@ class PlayState extends MusicBeatState
 		{
 			health -= 0.01;
 		}
-		
-		
+		//FELL OUT SHIT LOL
+		if (curStep >= 399 && curSong.toLowerCase() == 'fell-out')
+		{
+			changeDaddy('bad-cynic');
+		}
+		if (curStep >= 399 && curSong.toLowerCase() == 'fell-out')
+		{
+			changeBf('bad-bf');
+		}
+		if (curStep >= 399 && curSong.toLowerCase() == 'fell-out')
+			{
+				changeGf('bad-gf');
+			}
+		if (curStep >= 399 && curSong.toLowerCase() == 'fell-out')
+			{
+				remove(bg);
+				remove(backBuildings);
+				remove(buildings);
+				remove(groundhell);
+				remove(firefront);
+				var bg:FlxSprite = new FlxSprite(0, 50).loadGraphic(Paths.image('hell/white'));
+				bg.antialiasing = true;
+				bg.scrollFactor.set(0.2, 0.2);
+				bg.active = false;
+				bg.scale.set(1.7, 1.7);
+				bg.updateHitbox();
+				add(bg);
+			
+			}
 		if (dad.curCharacter == 'spooky' && curStep % 4 == 2)
 		{
 			// dad.dance();
