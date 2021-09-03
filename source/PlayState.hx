@@ -517,6 +517,12 @@ class PlayState extends MusicBeatState
 				dialogue = CoolUtil.coolTextFile(Paths.txt('roses/rosesDialogue'));
 			case 'thorns':
 				dialogue = CoolUtil.coolTextFile(Paths.txt('thorns/thornsDialogue'));
+			case 'armageddon':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('armageddon/dialogue'));
+			case 'shi':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('shi/dialogue'));
+			case 'fell-out':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('fell-out/dialogue'));
 		}
 
 		switch(SONG.song.toLowerCase())
@@ -830,7 +836,15 @@ class PlayState extends MusicBeatState
 			{
 					curStage = 'hell';
 					defaultCamZoom = 1.1;
-					
+
+					var whiteLol:FlxSprite = new FlxSprite(0, 50).loadGraphic(Paths.image('hell/white'));
+					whiteLol.antialiasing = true;
+					whiteLol.scrollFactor.set(1, 1);
+					whiteLol.active = false;
+					whiteLol.scale.set(1.60, 1.60);
+					whiteLol.updateHitbox();
+					add(whiteLol);
+
 					var bg:FlxSprite = new FlxSprite(0, 50).loadGraphic(Paths.image('hell/sky'));
 					bg.antialiasing = true;
 					bg.scrollFactor.set(0.2, 0.2);
@@ -1063,6 +1077,7 @@ class PlayState extends MusicBeatState
 
 		//the devs quote on qutoe me
 
+		/* this took me 5 years to code and im taking it out for relase (crys)
 		if (curStage == 'poophell')
 			{
 				var devTex = Paths.getSparrowAtlas('devs');
@@ -1097,7 +1112,7 @@ class PlayState extends MusicBeatState
 				dieTied.antialiasing = true;
 				add(dieTied);
 			}
-
+		*/
 		// Shitty layering but whatev it works LOL
 		if (curStage == 'limo')
 			add(limo);
@@ -1300,6 +1315,12 @@ class PlayState extends MusicBeatState
 					FlxG.sound.play(Paths.sound('ANGRY'));
 					schoolIntro(doof);
 				case 'thorns':
+					schoolIntro(doof);
+				case 'armageddon':
+					schoolIntro(doof);
+				case 'shi':
+					schoolIntro(doof);
+				case 'fell-out':
 					schoolIntro(doof);
 				default:
 					startCountdown();
@@ -4000,6 +4021,7 @@ class PlayState extends MusicBeatState
 			health -= 0.01;
 		}
 		//FELL OUT SHIT LOL
+
 		if (curStep >= 399 && curSong.toLowerCase() == 'fell-out')
 		{
 			changeDaddy('bad-cynic');
@@ -4012,22 +4034,7 @@ class PlayState extends MusicBeatState
 			{
 				changeGf('bad-gf');
 			}
-		if (curStep >= 399 && curSong.toLowerCase() == 'fell-out')
-			{
-				remove(bg);
-				remove(backBuildings);
-				remove(buildings);
-				remove(groundhell);
-				remove(firefront);
-				var bg:FlxSprite = new FlxSprite(0, 50).loadGraphic(Paths.image('hell/white'));
-				bg.antialiasing = true;
-				bg.scrollFactor.set(0.2, 0.2);
-				bg.active = false;
-				bg.scale.set(1.7, 1.7);
-				bg.updateHitbox();
-				add(bg);
-			
-			}
+
 		if (dad.curCharacter == 'spooky' && curStep % 4 == 2)
 		{
 			// dad.dance();
