@@ -1086,6 +1086,17 @@ class PlayState extends MusicBeatState
 				dieTied.antialiasing = true;
 				add(dieTied);
 			}
+		if (curStage == 'stage')
+			{
+				var dieTex = Paths.getSparrowAtlas('diebitch');
+					
+				dieTied = new FlxSprite(340, 430);
+				dieTied.frames = dieTex;
+				dieTied.animation.addByPrefix('idle', 'gf groupie instance');
+				dieTied.animation.play('idle');
+				dieTied.antialiasing = true;
+				add(dieTied);
+			}
 
 		// Shitty layering but whatev it works LOL
 		if (curStage == 'limo')
