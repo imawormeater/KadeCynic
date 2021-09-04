@@ -4020,8 +4020,41 @@ class PlayState extends MusicBeatState
 		{
 			health -= 0.01;
 		}
-		//FELL OUT SHIT LOL
-
+		//SHI HEALTH LOSS
+		if (curStep >= 64 && curStep <= 126 && curSong.toLowerCase() == 'shi')
+			{
+				health -= 0.015;
+			}
+		if (curStep >= 192 && curStep <= 254 && curSong.toLowerCase() == 'shi')
+			{
+				health -= 0.015;
+			}
+		if (curStep >= 320 && curStep <= 382 && curSong.toLowerCase() == 'shi')
+			{
+				health -= 0.015;
+			}
+		if (curStep >= 512 && curStep <= 575 && curSong.toLowerCase() == 'shi')
+			{
+				health -= 0.015;
+			}
+		if (curStep >= 640 && curStep <= 703 && curSong.toLowerCase() == 'shi')
+			{
+				health -= 0.015;
+			}
+		if (curStep >= 828 && curStep <= 832 && curSong.toLowerCase() == 'shi')
+			{
+				health -= 0.40;
+			}
+		if (curStep >= 833 && curStep <= 895 && curSong.toLowerCase() == 'shi')
+			{
+				health += 0.01;
+			}
+		if (curStep >= 896 && curStep <= 1087 && curSong.toLowerCase() == 'shi')
+			{
+				health -= 0.015;
+			}
+		//FELL OUT SHIT LOL (NOT FOR JAM) FOR LATER SHIT
+		/*
 		if (curStep >= 399 && curSong.toLowerCase() == 'fell-out')
 		{
 			changeDaddy('bad-cynic');
@@ -4034,12 +4067,12 @@ class PlayState extends MusicBeatState
 			{
 				changeGf('bad-gf');
 			}
-
+		*/
 		if (dad.curCharacter == 'spooky' && curStep % 4 == 2)
 		{
 			// dad.dance();
 		}
-
+		
 
 		// yes this updates every step.
 		// yes this is bad
