@@ -1047,7 +1047,7 @@ class PlayState extends MusicBeatState
 			case 'freak':
 				dad.x += 100;
 				dad.y += 210;
-				camPos.x += 100;
+				camPos.x += 400;
 		}
 
 
