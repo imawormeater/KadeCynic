@@ -361,6 +361,25 @@ class Character extends FlxSprite
 				addOffset("singDOWN", 46, -71);
 
 				playAnim('idle');
+			case 'freak':
+				// DAD ANIMATION LOADING CODE
+				// DAD ANIMATION LOADING CODE
+				tex = Paths.getSparrowAtlas('freak','shared');
+				frames = tex;
+				animation.addByPrefix('idle', 'poop idle', 24);
+				animation.addByPrefix('singUP', 'cum up', 24);
+				animation.addByPrefix('singRIGHT', 'balls right', 24);
+				animation.addByPrefix('singDOWN', 'down freak', 24);
+				animation.addByPrefix('singLEFT', 'shit left', 24);
+	
+				addOffset('idle');
+				addOffset("singUP", -19, 109);
+				addOffset("singRIGHT", -1, 22);
+				addOffset("singLEFT", 140, 8);
+				addOffset("singDOWN", 33, -85);
+	
+				playAnim('idle');
+
 			case 'bad-cynic':
 				// DAD ANIMATION LOADING CODE
 				// DAD ANIMATION LOADING CODE
